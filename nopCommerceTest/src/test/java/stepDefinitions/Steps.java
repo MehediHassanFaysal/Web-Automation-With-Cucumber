@@ -35,7 +35,7 @@ public class Steps {
 	@When("Click on login")
 	public void click_on_login() throws InterruptedException {
 	    lp.clickLogin();
-	    Thread.sleep(2000);
+	    Thread.sleep(2000); 
 	}
 
 	@Then("Page Title should be {string}")

@@ -15,7 +15,7 @@ import io.cucumber.junit.CucumberOptions;
 				"html:target/HTMLReport/html_report.html", 
 				"html:target/JSONReport/json_report.json"
 				}
-		)
+		) 
 
 
 public class TestRunner {
