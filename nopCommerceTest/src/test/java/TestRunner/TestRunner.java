@@ -12,7 +12,7 @@ import io.cucumber.junit.Cucumber;
 		dryRun=true,               // cross check all method should be executed properly or not. If we set it "false" then it execute actual run 
 		monochrome=true,           // it will eliminate unnecessary characters in console window 
 		plugin= {"pretty", 
-				"html:target/HTMLReport/html_report.html",
+				"html:target/HTMLReport/html_report.html", 
 				"html:target/JSONReport/json_report.json"
 				}
 		)

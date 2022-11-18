@@ -8,4 +8,4 @@ Scenario: Successful Login with valid Credentials
 	Then Page Title should be "Dashboard / nopCommerce administration"
 	When User check on Logout
 	Then Page Title should be "Your store. Login"
-	And close browser
+	And close browser 
