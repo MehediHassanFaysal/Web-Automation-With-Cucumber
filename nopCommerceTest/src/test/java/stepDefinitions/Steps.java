@@ -4,7 +4,7 @@ import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-import cucumber.api.java.en.*;
+import io.cucumber.java.en.*;
 import pageObjects.LoginPage;
 
 public class Steps {

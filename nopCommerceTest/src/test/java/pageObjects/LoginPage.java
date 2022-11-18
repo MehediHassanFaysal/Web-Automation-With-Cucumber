@@ -25,9 +25,9 @@ public class LoginPage {
 	
 	@FindBy(xpath="/html/body/div[6]/div/div/div/div/div[2]/div[1]/div/form/div[3]/button")
 	@CacheLookup
-	WebElement btnLogin; 
+	WebElement btnLogin;  
 	
-	@FindBy(linkText="logout")
+	@FindBy(linkText="Logout")
 	@CacheLookup
 	WebElement lnkLogout;
 	
