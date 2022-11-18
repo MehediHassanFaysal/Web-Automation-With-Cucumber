@@ -33,19 +33,21 @@ public class Steps {
 	}
 
 	@When("Click on login")
-	public void click_on_login() {
+	public void click_on_login() throws InterruptedException {
 	    lp.clickLogin();
+	    Thread.sleep(2000);
 	}
 
 	@Then("Page Title should be {string}")
 	public void page_title_should_be(String title) throws InterruptedException {
 	   if(driver.getPageSource().contains("Login was unsuccessful.")) {
 		   driver.close();
-		   Thread.sleep(2000);
+		   
 		   Assert.assertTrue(false);
 	   }else {
 		   Assert.assertEquals(title,driver.getTitle());
 	   }
+	   Thread.sleep(2000);
 	}
 
 	@When("User check on Logout")
