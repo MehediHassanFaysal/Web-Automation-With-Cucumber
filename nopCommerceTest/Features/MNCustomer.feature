@@ -8,7 +8,8 @@ Background: Below are common steps for every scenario
 	Then User can view Dashboard
 	When User click on Customers Menu
 	And Click on Customers Menu Item
-
+	
+@sanity
 Scenario: Add a new Customer
 	And click on Add new button
 	Then User can view Add new customers page
@@ -17,6 +18,7 @@ Scenario: Add a new Customer
 	Then User can view conformation message "The new customer has been added successfully."
 	And close browser
 	
+@regression 
 Scenario: Search Customer by EmailID
 	And Enter Customer Email
 	When Click on search button

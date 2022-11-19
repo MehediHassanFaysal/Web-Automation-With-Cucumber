@@ -1,0 +1,92 @@
+--------- launching browser ---------
+--------- Opening URL ---------
+--------- Providing login details ---------
+--------- Started Login ---------
+--------- Login passed ---------
+--------- Clicking on menu ---------
+--------- Clicking on customers sub-item menu ---------
+--------- Click on Add new button ---------
+--------- Adding new customer info. ---------
+--------- New customer assigned successfully ---------
+--------- Login passed ---------
+--------- launching browser ---------
+--------- Opening URL ---------
+--------- Providing login details ---------
+--------- Started Login ---------
+--------- Login passed ---------
+--------- Clicking on menu ---------
+--------- Clicking on customers sub-item menu ---------
+--------- Login passed ---------
+--------- launching browser ---------
+--------- Opening URL ---------
+--------- Providing login details ---------
+--------- Started Login ---------
+--------- Login passed ---------
+--------- Clicking on menu ---------
+--------- Clicking on customers sub-item menu ---------
+--------- Click on Add new button ---------
+--------- Adding new customer info. ---------
+--------- New customer assigned successfully ---------
+--------- Login passed ---------
+--------- launching browser ---------
+--------- Opening URL ---------
+--------- Providing login details ---------
+--------- Started Login ---------
+--------- Login passed ---------
+--------- Clicking on menu ---------
+--------- Clicking on customers sub-item menu ---------
+--------- Login passed ---------
+--------- launching browser ---------
+--------- Opening URL ---------
+--------- Providing login details ---------
+--------- Started Login ---------
+--------- Login passed ---------
+--------- Clicking on menu ---------
+--------- Clicking on customers sub-item menu ---------
+--------- Click on Add new button ---------
+--------- Adding new customer info. ---------
+--------- New customer assigned successfully ---------
+--------- Login passed ---------
+2022-11-19 09:00:47,039 - nopCommerce ---------- launching browser ---------
+2022-11-19 09:00:47,082 - nopCommerce ---------- Opening URL ---------
+2022-11-19 09:00:50,954 - nopCommerce ---------- Providing login details ---------
+2022-11-19 09:00:52,292 - nopCommerce ---------- Started Login ---------
+2022-11-19 09:00:59,461 - nopCommerce ---------- Login passed ---------
+2022-11-19 09:00:59,481 - nopCommerce ---------- Clicking on menu ---------
+2022-11-19 09:01:01,562 - nopCommerce ---------- Clicking on customers sub-item menu ---------
+2022-11-19 09:01:07,086 - nopCommerce ---------- Click on Add new button ---------
+2022-11-19 09:01:12,972 - nopCommerce ---------- Adding new customer info. ---------
+2022-11-19 09:01:19,160 - nopCommerce ---------- New customer assigned successfully ---------
+2022-11-19 09:01:23,373 - nopCommerce ---------- Login passed ---------
+2022-11-19 09:01:27,926 - nopCommerce ---------- launching browser ---------
+2022-11-19 09:01:27,928 - nopCommerce ---------- Opening URL ---------
+2022-11-19 09:01:29,872 - nopCommerce ---------- Providing login details ---------
+2022-11-19 09:01:31,099 - nopCommerce ---------- Started Login ---------
+2022-11-19 09:01:39,402 - nopCommerce ---------- Login passed ---------
+2022-11-19 09:01:39,417 - nopCommerce ---------- Clicking on menu ---------
+2022-11-19 09:01:41,498 - nopCommerce ---------- Clicking on customers sub-item menu ---------
+2022-11-19 09:01:47,914 - nopCommerce ---------- Login passed ---------
+2022-11-19 09:01:51,693 - nopCommerce ---------- launching browser ---------
+2022-11-19 09:01:51,695 - nopCommerce ---------- Opening URL ---------
+2022-11-19 09:01:53,382 - nopCommerce ---------- Providing login details ---------
+2022-11-19 09:01:54,688 - nopCommerce ---------- Started Login ---------
+2022-11-19 09:02:00,919 - nopCommerce ---------- Login failed ---------
+2022-11-19 09:02:02,941 - nopCommerce ---------- Click on logout link ---------
+2022-11-19 09:02:07,241 - nopCommerce ---------- Login failed ---------
+2022-11-19 09:02:09,273 - nopCommerce ---------- Login passed ---------
+2022-11-19 09:02:11,947 - nopCommerce ---------- launching browser ---------
+2022-11-19 09:02:11,949 - nopCommerce ---------- Opening URL ---------
+2022-11-19 09:02:13,128 - nopCommerce ---------- Providing login details ---------
+2022-11-19 09:02:14,431 - nopCommerce ---------- Started Login ---------
+2022-11-19 09:02:20,504 - nopCommerce ---------- Login failed ---------
+2022-11-19 09:02:22,535 - nopCommerce ---------- Click on logout link ---------
+2022-11-19 09:02:26,992 - nopCommerce ---------- Login failed ---------
+2022-11-19 09:02:29,015 - nopCommerce ---------- Login passed ---------
+2022-11-19 09:02:31,650 - nopCommerce ---------- launching browser ---------
+2022-11-19 09:02:31,650 - nopCommerce ---------- Opening URL ---------
+2022-11-19 09:02:32,527 - nopCommerce ---------- Providing login details ---------
+2022-11-19 09:02:33,769 - nopCommerce ---------- Started Login ---------
+2022-11-19 09:02:39,089 - nopCommerce ---------- Login failed ---------
+2022-11-19 09:02:41,230 - nopCommerce ---------- Click on logout link ---------
+2022-11-19 09:02:45,656 - nopCommerce ---------- Login failed ---------
+2022-11-19 09:02:47,664 - nopCommerce ---------- Login passed ---------

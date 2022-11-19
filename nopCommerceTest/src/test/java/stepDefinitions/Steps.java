@@ -1,9 +1,17 @@
 package stepDefinitions;
 
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.util.Properties;
+
+import org.apache.log4j.Logger;
+import org.apache.log4j.PropertyConfigurator;
 import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 
+import io.cucumber.java.Before;
 import io.cucumber.java.en.*;
 import pageObjects.AddCustomerPage;
 import pageObjects.LoginPage;
@@ -12,29 +20,65 @@ import pageObjects.SearchCustomerPage;
 public class Steps extends BaseClass {
 
 
+	@Before
+	public void setup() throws IOException {
+		
+		logger=Logger.getLogger("nopCommerce"); // Added logger
+		PropertyConfigurator.configure("log4j.properties"); // Added logger
+		
+		//Reading properties
+		configProp=new Properties();
+		FileInputStream configProfile=new FileInputStream("config.properties");
+		configProp.load(configProfile);
+		
+		//System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"//Drivers/chromedriver.exe");
+		//driver = new ChromeDriver();
+		String br=configProp.getProperty("browser");
+		if(br.equals("chrome")) {
+			System.setProperty("webdriver.chrome.driver", configProp.getProperty("chromepath"));
+			driver = new ChromeDriver();
+		}
+		else if(br.equals("firefox")) {
+			System.setProperty("webdriver.gecko.driver", configProp.getProperty("firefoxpath"));
+			driver = new FirefoxDriver();
+		}
+		else if(br.equals("iepath")) {
+			System.setProperty("webdriver.ie.driver", configProp.getProperty("ie"));
+			driver = new FirefoxDriver();
+		}else {
+			System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"//Drivers/chromedriver.exe");
+			driver = new ChromeDriver();
+		}
+		
+		
+	    
+	}
+	
+	
 	@Given("User Launch Chrome browser")
 	public void user_launch_chrome_browser() {
-		System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"//Drivers/chromedriver.exe");
-	    driver = new ChromeDriver();
-	    
+	    logger.info("--------- launching browser ---------");
 	    lp= new LoginPage(driver);
 	}
 
 	@When("User opens URL {string}")
 	public void user_opens_url(String url) {
+		logger.info("--------- Opening URL ---------");
 		driver.get(url); 
 		driver.manage().window().maximize();
 	}
 
 	@When("User enters Email as {string} and Password as {string}")
 	public void user_enters_email_as_and_password_as(String email, String password) throws InterruptedException {
-	    lp.setUserName(email);
+		logger.info("--------- Providing login details ---------");
+		lp.setUserName(email);
 	    lp.setPassword(password);
 		   Thread.sleep(1000);
 	}
 
 	@When("Click on login")
 	public void click_on_login() throws InterruptedException {
+		logger.info("--------- Started Login ---------");
 	    lp.clickLogin();
 	    Thread.sleep(2000); 
 	}
@@ -43,9 +87,10 @@ public class Steps extends BaseClass {
 	public void page_title_should_be(String title) throws InterruptedException {
 	   if(driver.getPageSource().contains("Login was unsuccessful.")) {
 		   driver.close();
-		   
+		   logger.info("--------- Login passed ---------");
 		   Assert.assertTrue(false);
 	   }else {
+		   logger.info("--------- Login failed ---------");
 		   Assert.assertEquals(title,driver.getTitle());
 	   }
 	   Thread.sleep(2000);
@@ -53,12 +98,14 @@ public class Steps extends BaseClass {
 
 	@When("User check on Logout")
 	public void user_check_on_logout() throws InterruptedException {
+		logger.info("--------- Click on logout link ---------");
 	    lp.clickLogout();
 	    Thread.sleep(3000); // 3 seconds
 	}
 
 	@Then("close browser")
 	public void close_browser() {
+	   logger.info("--------- Login passed ---------");
 	   driver.quit();   // or driver.close();
 	}
 	
@@ -67,25 +114,28 @@ public class Steps extends BaseClass {
 	
 	@Then("User can view Dashboard")
 	public void user_can_view_dashboard() {
+		   logger.info("--------- Login passed ---------");
 	   addCust = new AddCustomerPage(driver);
 	   Assert.assertEquals("Dashboard / nopCommerce administration", addCust.getPageTitle());
 	}
 	
 	@When("User click on Customers Menu")
 	public void user_click_on_customers_menu() throws InterruptedException {
+	   logger.info("--------- Clicking on menu ---------");
 	   Thread.sleep(2000);
 	   addCust.clickOnCustomersMenu();
 	}
 	
 	@When("Click on Customers Menu Item")
 	public void click_on_customers_menu_item() throws InterruptedException {
+		   logger.info("--------- Clicking on customers sub-item menu ---------");
 		   Thread.sleep(2000);
 		   addCust.clickOnCustomersMenuItem();
 	}
 	
 	@When("click on Add new button")
 	public void click_on_add_new_button() throws InterruptedException {
-
+		   logger.info("--------- Click on Add new button ---------");
 		   addCust.clickOnAddNew();
 		   Thread.sleep(3000);
 	}
@@ -96,6 +146,7 @@ public class Steps extends BaseClass {
 	}
 	@When("User enter Customer info")
 	public void user_enter_customer_info() throws InterruptedException {
+		logger.info("--------- Adding new customer info. ---------");
 	    String email = randomstring()+"@gmail.com";
 	    addCust.setEmail(email);
 	    addCust.setPassword("text1234");
@@ -117,6 +168,7 @@ public class Steps extends BaseClass {
 	
 	@When("click on Save button")
 	public void click_on_save_button() throws InterruptedException {
+		logger.info("--------- New customer assigned successfully ---------");
 		Thread.sleep(1000);
 	    addCust.clickOnSave();
 	    Thread.sleep(1000);
