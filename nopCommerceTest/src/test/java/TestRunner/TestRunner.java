@@ -7,7 +7,7 @@ import io.cucumber.junit.CucumberOptions;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-		features=".//Features/Signin.feature",    // here, .// means folder 
+		features=".//Features/MNCustomer.feature",    // here, .// means folder 
 		glue="stepDefinitions",    // define file under stepDefinitions package
 		dryRun=false,               // cross check all method should be executed properly or not. If we set it "false" then it execute actual run 
 		monochrome=true,           // it will eliminate unnecessary characters in console window 
