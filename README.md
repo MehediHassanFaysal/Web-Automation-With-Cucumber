@@ -9,7 +9,6 @@
 - Products
 - Customers
 - Logout
->[Click here](https://drive.google.com/file/d/1n1YLHFhUti6cvkbbxGFlzu89MezoIxZC/view?usp=sharing) to review the Mind Map of nopCommerce
 
 >[Click here](https://drive.google.com/file/d/1c_PbKS7aplbAnXSaETNJpbWVCtpFNN0k/view?usp=share_link) to see all Logs
 
