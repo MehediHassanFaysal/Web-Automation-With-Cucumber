@@ -15,3 +15,4 @@
 
 >Review the [Report & Scenario](https://mehedihassanfaysal.github.io/Web-Automation-With-Cucumber/) of feature's
 
+> Review the [Mind Map](https://drive.google.com/file/d/1dOBep9432477tbko8FcZzpu_lliFzSSN/view?usp=share_link)
