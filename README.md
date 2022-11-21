@@ -1,7 +1,7 @@
 # Web-Automation-With-Cucumber
 
  ## 1. nopCommerce: Admin area demo ([click here](https://admin-demo.nopcommerce.com/login) to see dummy website)
- #### Testing type: Automation (Cucumber BDD framework with Selenium)
+ #### Testing type: Automation (BDD framework: Cucumber with Selenium)
  ##### Module Name: User Management & Catalog
  ###### Environment: Production
   ##### Tested Feature's:
